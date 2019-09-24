@@ -8,7 +8,6 @@ stdin.on('data', (key) => {
     
     process.exit();
   } else if (key.toLowerCase() === 'b') {
-    console.log('Immediate sound');
     process.stdout.write('\x07');
   } else if (typeof Number(key) === 'number' && Number(key) >= 0) {
     process.stdout.write('Startig timer for ' + key + ' seconds');
